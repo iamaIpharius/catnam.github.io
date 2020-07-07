@@ -1,1 +1,1 @@
-$(document).ready((function(){$(".owl-carousel").owlCarousel({margin:30,loop:!0,responsiveClass:!0,responsiveRefreshRate:15,autoWidth:!0})}));
+$(document).ready((function(){$(".owl-carousel").owlCarousel({margin:20,loop:!0,responsiveClass:!0,responsiveRefreshRate:15,autoWidth:!0,responsive:{0:{items:1,nav:!0},1e3:{items:3,nav:!0}}});var e=$("#sound")[0];$("#play").click((function(){e.play()})),$("#pause").click((function(){e.pause()}))}));
