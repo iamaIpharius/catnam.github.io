@@ -13,8 +13,11 @@ $(document).ready(function(){
       780:{
             items:2,
         },
-        1500:{
-              items:3,
+      1400:{
+            items:3,
+        },
+      1620:{
+            items:4,
           }
     },
    });
@@ -32,15 +35,19 @@ $(document).ready(function(){
     $(this).clone().appendTo("#modal-callback");
   });
   $("#close-button-callback").click(function(){
-    $(this).next().remove()
     $("#modal-callback").removeClass("opened")
     $(".modal-overlay").removeClass("opened")
     $("body").removeClass("hidden")
+    setTimeout(function(){
+      $("#close-button-callback").next().remove()
+    }, 500)
   });
   $(".modal-overlay").click(function(){
-    $("#close-button-callback").next().remove()
     $(this).removeClass("opened")
     $("body").removeClass("hidden")
     $("#modal-callback").removeClass("opened")
+    setTimeout(function(){
+      $("#close-button-callback").next().remove()
+    }, 500)
   });
 });
