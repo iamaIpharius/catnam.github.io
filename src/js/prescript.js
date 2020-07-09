@@ -4,7 +4,7 @@ $(document).ready(function(){
    	loop: true,
   	responsiveClass:true,
   	responsiveRefreshRate: 15,
-
+    
     responsive : {
       0:{
             items:1,
