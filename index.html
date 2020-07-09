@@ -17,13 +17,14 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="src/img/fav/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="src/libs/owlcarousel2/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="src/libs/owlcarousel2/assets/owl.theme.default.css">
+
+    <link rel="stylesheet" type="text/css" href="src/libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/libs/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script defer src="src/js/preloader.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  	<script defer src="src/libs/owlcarousel2/owl.carousel.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script defer type="text/javascript" src="src/libs/slick/slick.min.js"></script>
   	<script defer src="script.js"></script>
     <script defer src="https://use.fontawesome.com/c68ea81907.js"></script>
   </head>
@@ -32,7 +33,7 @@
       <div class="loader"></div>
     </div>
     <div class="video">
-      <video class="video__file" src="src/video2.mp4" autoplay muted loop poster="src/img/cover.png"></video>
+      <video class="video__file" src="src/video2.mp4" autoplay muted loop poster="src/img/cover.jpg"></video>
     </div>
         <header class="header">
           <div class="container header__box">
@@ -59,34 +60,36 @@
         </main>
         <div class="container slider-box">
           <section class="slider">
-            <div class="owl-carousel owl-theme">
-                <div class="item"><img class="img"src="src/img/1.jpg"></div>
-                <div class="item"><img class="img"src="src/img/2.jpg"></div>
-                <div class="item"><img class="img"src="src/img/3.jpg"></div>
-                <div class="item"><img class="img"src="src/img/4.jpg"></div>
-                <div class="item"><img class="img"src="src/img/5.jpg"></div>
-                <div class="item"><img class="img"src="src/img/6.jpg"></div>
-                <div class="item"><img class="img"src="src/img/7.jpg"></div>
-                <div class="item"><img class="img"src="src/img/8.jpg"></div>
-                <div class="item"><img class="img"src="src/img/9.jpg"></div>
-                <div class="item"><img class="img"src="src/img/10.jpg"></div>
-                <div class="item"><img class="img"src="src/img/11.jpg"></div>
-                <div class="item"><img class="img"src="src/img/12.jpg"></div>
-                <div class="item"><img class="img"src="src/img/13.jpg"></div>
-                <div class="item"><img class="img"src="src/img/14.jpg"></div>
-                <div class="item"><img class="img"src="src/img/15.jpg"></div>
-                <div class="item"><img class="img"src="src/img/16.jpg"></div>
-                <div class="item"><img class="img"src="src/img/17.jpg"></div>
-                <div class="item"><img class="img"src="src/img/18.jpg"></div>
-                <div class="item"><img class="img"src="src/img/19.jpg"></div>
-                <div class="item"><img class="img"src="src/img/20.jpg"></div>
-                <div class="item"><img class="img"src="src/img/21.jpg"></div>
-                <div class="item"><img class="img"src="src/img/22.jpg"></div>
-                <div class="item"><img class="img"src="src/img/23.jpg"></div>
-                <div class="item"><img class="img"src="src/img/24.jpg"></div>
-                <div class="item"><img class="img"src="src/img/25.jpg"></div>
-                <div class="item"><img class="img"src="src/img/26.jpg"></div>
+            <button type="button" id="prev"></button>
+            <div class="my-slider">
+                <div class="item"><img data-lazy="src/img/1.jpg" class="img"src="src/img/1.jpg"></div>
+                <div class="item"><img data-lazy="src/img/2.jpg" class="img"src="src/img/2.jpg"></div>
+                <div class="item"><img data-lazy="src/img/3.jpg" class="img"src="src/img/3.jpg"></div>
+                <div class="item"><img data-lazy="src/img/4.jpg" class="img"src="src/img/4.jpg"></div>
+                <div class="item"><img data-lazy="src/img/5.jpg" class="img"src="src/img/5.jpg"></div>
+                <div class="item"><img data-lazy="src/img/6.jpg" class="img"src="src/img/6.jpg"></div>
+                <div class="item"><img data-lazy="src/img/7.jpg" class="img"src="src/img/7.jpg"></div>
+                <div class="item"><img data-lazy="src/img/8.jpg" class="img"src="src/img/8.jpg"></div>
+                <div class="item"><img data-lazy="src/img/9.jpg" class="img"src="src/img/9.jpg"></div>
+                <div class="item"><img data-lazy="src/img/10.jpg" class="img"src="src/img/10.jpg"></div>
+                <div class="item"><img data-lazy="src/img/11.jpg" class="img"src="src/img/11.jpg"></div>
+                <div class="item"><img data-lazy="src/img/12.jpg" class="img"src="src/img/12.jpg"></div>
+                <div class="item"><img data-lazy="src/img/13.jpg" class="img"src="src/img/13.jpg"></div>
+                <div class="item"><img data-lazy="src/img/14.jpg" class="img"src="src/img/14.jpg"></div>
+                <div class="item"><img data-lazy="src/img/15.jpg" class="img"src="src/img/15.jpg"></div>
+                <div class="item"><img data-lazy="src/img/16.jpg" class="img"src="src/img/16.jpg"></div>
+                <div class="item"><img data-lazy="src/img/17.jpg" class="img"src="src/img/17.jpg"></div>
+                <div class="item"><img data-lazy="src/img/18.jpg" class="img"src="src/img/18.jpg"></div>
+                <div class="item"><img data-lazy="src/img/19.jpg" class="img"src="src/img/19.jpg"></div>
+                <div class="item"><img data-lazy="src/img/20.jpg" class="img"src="src/img/20.jpg"></div>
+                <div class="item"><img data-lazy="src/img/21.jpg" class="img"src="src/img/21.jpg"></div>
+                <div class="item"><img data-lazy="src/img/22.jpg" class="img"src="src/img/22.jpg"></div>
+                <div class="item"><img data-lazy="src/img/23.jpg" class="img"src="src/img/23.jpg"></div>
+                <div class="item"><img data-lazy="src/img/24.jpg" class="img"src="src/img/24.jpg"></div>
+                <div class="item"><img data-lazy="src/img/25.jpg" class="img"src="src/img/25.jpg"></div>
+                <div class="item"><img data-lazy="src/img/26.jpg" class="img"src="src/img/26.jpg"></div>
             </div>
+            <button type="button" id="next"></button>
           </section>
         </div>
 
