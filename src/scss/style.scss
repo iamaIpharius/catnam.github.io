@@ -38,9 +38,7 @@ body {
   height: 100%;
   background: url('src/img/preloader.jpg') center no-repeat;
   z-index: 10;
-  transition: 1s all;
-  opacity: 1;
-  visibility: visible;
+
   .loader {
     width: 300px;
     height: 100px;
@@ -52,10 +50,7 @@ body {
     transform: translate(-50%, -40%);
     animation: 2s spin infinite linear;
   }
-  &.done {
-    opacity: 0;
-    visibility: hidden;
-  }
+
 }
 @keyframes spin {
   0% {
@@ -229,6 +224,13 @@ p {
   		color: red;
   	}
   }
+@media (max-width: 1400px) {
+  #prev, #next {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+}
 @media (max-width: 440px) {
   #prev, #next {
     width: 34px;
