@@ -6,6 +6,15 @@ $(document).ready(function(){
      prevArrow:$("#prev"),
      nextArrow:$("#next"),
    });
+   $(".my-slider").on('wheel', (function(e) {
+  e.preventDefault();
+
+  if (e.originalEvent.deltaY < 0) {
+      $(this).slick('slickNext');
+    } else {
+      $(this).slick('slickPrev');
+    }
+  }));
    var audio = $("#sound")[0];
     $("#play").click(function() {
       audio.play();
