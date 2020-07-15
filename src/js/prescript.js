@@ -3,7 +3,6 @@ $(document).ready(function(){
      infinite: true,
      slidesToScroll: 1,
      variableWidth: true,
-     lazyLoad: 'ondemand',
      prevArrow:$("#prev"),
      nextArrow:$("#next"),
    });
